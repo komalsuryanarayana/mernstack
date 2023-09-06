@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.vertical {
+  /* Apply styles to the parent div, not ul */
+  overflow: hidden;
+  background-color:lightskyblue;
+}
+
+.vertical ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.vertical li a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+
+/* Change the link color on hover */
+.vertical li a:hover {
+  background-color: #555;
+  color: white;
+}
+
+.hori {
+  /* Apply styles to the parent div, not ul */
+  overflow: hidden;
+  background-color:grey
+}
+
+.hori ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.hori li {
+  float: left;
+}
+
+.hori li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.hori li a:hover {
+  background-color: #111;
+}
+</style>
+</head>
+<body>
+<h2>Horizontal Navigation Bar</h2>
+<div class="hori">
+  <ul>
+    <li><a class="active" href="#home">Home</a></li>
+    <li><a href="#news">News</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#about">About</a></li>
+  </ul>
+</div>
+<br>
+<br>
+<div class="vertical">
+  <h2>Vertical Navigation Bar</h2>
+  <ul>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#news">News</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#about">About</a></li>
+  </ul>
+</div>
+</body>
+</html>
